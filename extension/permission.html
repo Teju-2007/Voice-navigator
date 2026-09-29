@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Voice Navigator — Microphone Setup</title>
+  <style>
+    body {
+      font-family: -apple-system, system-ui, sans-serif;
+      max-width: 480px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 0 20px;
+      color: #1f2937;
+    }
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    #status {
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h2>One-time microphone setup</h2>
+  <p>
+    Chrome can only show the "Allow microphone?" prompt on a visible page
+    like this one — it can't show it from the background. Click below,
+    allow access, and Voice Navigator will be able to listen every time
+    you click "Start Listening" from now on, with no extra prompt.
+  </p>
+  <button id="grantBtn">Allow Microphone Access</button>
+  <div id="status"></div>
+  <script src="permission.js"></script>
+</body>
+</html>

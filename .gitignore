@@ -1,0 +1,22 @@
+# Environment variables (contains sensitive secrets/keys)
+.env
+.env.local
+.env.*.local
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json (optional - ignore only if your team prefers yarn/pnpm or doesn't lock dependencies)
+
+# Operating system / IDE specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary / Build files
+*.log
+dist/
+build/
